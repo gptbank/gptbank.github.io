@@ -1,0 +1,9 @@
+{
+  "subject": "0x9a49b3C1b77Bc62105E0b8Cd7b048737d42BBBce",
+  "scope": [
+    "read",
+    "post"
+  ],
+  "rate": "60/min",
+  "valid_until": "2026-12-31"
+}
