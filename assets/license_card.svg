@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+  <rect width="900" height="560" fill="#fff"/>
+  <rect x="20" y="20" width="860" height="520" rx="20" ry="20" fill="#fff" stroke="#F7931A" stroke-width="6"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial" fill="#111111">
+    <text x="50" y="80" font-size="36" font-weight="700">CIVAI.eth — License (Preview)</text>
+    <text x="50" y="130" font-size="22">Type: Agent License (MINDID) · Scope: read/post · Rate: 30/min</text>
+    <text x="50" y="170" font-size="22">Owner: ag-0001.mindid.eth · Valid‑until: 2026‑12‑31</text>
+    <text x="50" y="210" font-size="22">EAS UID: 0xabc…123 · Serial: 000001</text>
+  </g>
+  <g transform="translate(50,250)" fill="#fff">
+    <rect width="220" height="120" rx="12" ry="12" fill="#F7931A"/>
+    <text x="18" y="74" font-size="48" font-weight="700" fill="#fff">CIVAI</text>
+  </g>
+  <g transform="translate(300,255)" fill="#555555" font-size="16">
+    <text y="0">Discipline: No token · No custody · No PII · No second keys · Append‑only</text>
+    <text y="28">Revocation index: ipfs://…  ·  ENS text: owner/controller/scope/rate/valid_until</text>
+  </g>
+</svg>

@@ -1,9 +1,12 @@
-# CIVAI — Public Gateway
+# CIVAI — Public Gateway (v1.2 light)
 
-Live: (set via GitHub Pages)
+- Three languages (EN/中文/日本語)
+- Bitcoin.org color mood (orange/white/dark text) — no black backgrounds
+- Mobile-first; simple HTML/CSS; no build toolchain
+- GitHub Pages ready (root `/` with `index.html` lang-redirect)
 
-Languages: EN / 中文 / 日本語
+## Edit pricing
+Open `*_pricing.html` and search for `PRICE:` markers.
 
-Discipline: No token · No custody · No PII · No second keys · Append-only history.
-
-Keys: CIVAI / 0PRIMUS / AXIOMID / PRIMEID / MINDID / SOULID / GODBANK.
+## Diagram
+`assets/CIVAI_SevenKeys_Diagrams_v2.svg` — white background, scalable, no overlap.

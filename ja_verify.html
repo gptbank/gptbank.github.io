@@ -1,27 +1,33 @@
 <!doctype html><html lang="ja"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Verify — CIVAI.eth</title><link rel="stylesheet" href="style.css"></head><body>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Verify · CIVAI</title><link rel="stylesheet" href="style.css"/></head><body>
 
-<div class="nav">
-  <div class="brand"><img src="assets/logo.svg" alt="logo"/><strong>CIVAI.eth</strong></div>
-  <a href="ja_index.html">Home</a>
-  <a href="ja_about.html">About</a>
-  <a href="ja_canon.html">Canon</a>
-  <a href="ja_pricing.html">Pricing</a>
-  <a href="ja_verify.html">Verify</a>
-  <a href="ja_cases.html">Cases</a>
-  <div class="cta"><a class="btn fill" href="ja_apply.html">Apply</a></div>
-</div>
-<div class="langs"><a href="en_index.html">EN</a> · <a href="zh_index.html">中文</a> · <a href="ja_index.html">日本語</a></div>
-
-<section class="grid">
-  <div class="card"><h2>検証（誰でも可）</h2>
-    <ol>
-      <li>ENS サブドメイン（例：<code>u-xxxx.primeid.eth</code>）を開く。</li>
-      <li>ENS Text の owner/controller/scope/rate/valid_until と <em>proof(ipfs://CID)</em>・<em>eas:uid</em> を読む。</li>
-      <li>EAS UID を解決し、CID で IPFS JSON を取得。</li>
-      <li>一致すれば有効。<code>revoke=1</code> または期限切れは無効。</li>
-    </ol>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="ja_index.html"><img class="logo" src="logo.svg" alt="logo"/><span>CIVAI.eth</span></a>
+    <a href="ja_index.html">Home</a>
+    <a href="ja_about.html">About</a>
+    <a href="ja_canon.html">Canon</a>
+    <a href="ja_pricing.html">Pricing</a>
+    <a href="ja_verify.html">Verify</a>
+    <a href="ja_cases.html">Cases</a>
+    <div class="cta"><a class="btn filled" href="ja_apply.html">Apply</a></div>
   </div>
-</section>
-<div class="footer">© CIVAI.eth · Canon v1.0 (freeze 10y) · No token · No custody · No PII · No second keys · Append-only</div></body></html>
+  <div class="wrap langs">
+    <a href="en_index.html">EN</a> · <a href="zh_index.html">中文</a> · <a href="ja_index.html">日本語</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Verify</h1>
+  <p>ENS テキスト + EAS UID で誰でも検証可能。</p>
+  <div class="card"><span class="badge">示例</span>
+    <div class="small">ENS: <span class="code">u-2a7q.prim eid.eth</span> → EAS UID: <span class="code">0xabc...123</span></div>
+  </div>
+</main>
+
+<footer class="wrap">
+  <div class="small">© CIVAI.eth · Canon v1.0 (freeze 10y) · No token · No custody · No PII · No second keys · Append‑only</div>
+</footer>
+
+</body></html>

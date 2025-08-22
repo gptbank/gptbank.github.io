@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1750" viewBox="0 0 1240 1750">
+  <title>CIVAI · Seven Keys Architecture v2</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <style>
+    .box { fill: #fff; stroke: #F7931A; stroke-width: 3; rx:14; ry:14; }
+    .t { font: 24px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, 'PingFang SC','Hiragino Sans GB','Noto Sans CJK SC','Microsoft YaHei', sans-serif; fill: #111111; }
+    .s { font: 18px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, 'PingFang SC','Hiragino Sans GB','Noto Sans CJK SC','Microsoft YaHei', sans-serif; fill: #555555; }
+    .arrow { stroke: #555555; stroke-width:2; marker-end:url(#m); fill:none; }
+  </style>
+  <defs>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L10,3 L0,6 z" fill="#555555"/>
+    </marker>
+    <filter id="shadow"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/></filter>
+  </defs>
+
+  <g transform="translate(70,60)">
+    <text class="t" x="0" y="0">CIVAI · Seven Keys Architecture — v2</text>
+    <text class="s" x="0" y="34">Use infra, not reinvent: ENS · IPFS · EAS · Safe · GitHub</text>
+
+    <!-- top -->
+    <rect class="box" x="440" y="80" width="300" height="86" filter="url(#shadow)"/><text class="t" x="470" y="120">0PRIMUS.eth</text><text class="s" x="470" y="150">Constitution (Canon) + Revocation Index (IPFS)</text>
+
+    <!-- second -->
+    <rect class="box" x="440" y="220" width="300" height="86" filter="url(#shadow)"/><text class="t" x="462" y="260">AXIOMID.eth</text><text class="s" x="462" y="290">Rules Library / Proof Format / Index</text>
+    <path class="arrow" d="M590,166 V218"/>
+
+    <!-- third row -->
+    <rect class="box" x="50" y="360" width="300" height="86" filter="url(#shadow)"/><text class="t" x="72" y="400">PRIMEID.eth</text><text class="s" x="72" y="430">Human/Org License</text>
+    <rect class="box" x="470" y="360" width="300" height="86" filter="url(#shadow)"/><text class="t" x="492" y="400">MINDID.eth</text><text class="s" x="492" y="430">Agent License</text>
+    <rect class="box" x="890" y="360" width="300" height="86" filter="url(#shadow)"/><text class="t" x="912" y="400">SOULID.eth</text><text class="s" x="912" y="430">Reputation / Contribution</text>
+
+    <path class="arrow" d="M590,306 C590,330 590,330 590,356"/>
+    <path class="arrow" d="M590,306 C300,330 300,330 200,356"/>
+    <path class="arrow" d="M590,306 C880,330 880,330 1040,356"/>
+
+    <!-- outlets -->
+    <rect class="box" x="360" y="520" width="300" height="86" filter="url(#shadow)"/><text class="t" x="382" y="560">GODBANK.eth</text><text class="s" x="382" y="590">Budget / Allocation Disclosure</text>
+    <rect class="box" x="720" y="520" width="300" height="86" filter="url(#shadow)"/><text class="t" x="742" y="560">CIVAI.eth</text><text class="s" x="742" y="590">Public Gateway / Notices / Navigation</text>
+    <path class="arrow" d="M500,448 V518"/>
+    <path class="arrow" d="M760,448 V518"/>
+
+    <!-- issuance mechanism -->
+    <g transform="translate(0,690)">
+      <text class="t" x="0" y="0">Issuance Mechanism: Subdomain + Proof — v2</text>
+      <text class="s" x="0" y="34">Each license = ENS Subdomain (text) + IPFS JSON (source) + EAS Attestation (UID)</text>
+
+      <rect class="box" x="40" y="60" width="320" height="86"/><text class="t" x="60" y="100">Apply / Review</text><text class="s" x="60" y="130">Form → Checklist (AXIOMID rule)</text>
+      <rect class="box" x="420" y="60" width="320" height="86"/><text class="t" x="440" y="100">Create JSON (IPFS)</text><text class="s" x="440" y="130">rules/subject/scope/rate/validity/serial</text>
+      <rect class="box" x="800" y="60" width="320" height="86"/><text class="t" x="820" y="100">EAS Attest</text><text class="s" x="820" y="130">Schema → fields → sign → UID</text>
+
+      <rect class="box" x="40" y="210" width="320" height="86"/><text class="t" x="60" y="250">Create Subdomain (ENS)</text><text class="s" x="60" y="280">PRIMEID/MINDID/SOULID</text>
+      <rect class="box" x="420" y="210" width="320" height="86"/><text class="t" x="440" y="250">Write ENS Text</text><text class="s" x="440" y="280">owner/controller/scope/rate/valid_until</text>
+      <rect class="box" x="800" y="210" width="320" height="86"/><text class="t" x="820" y="250">Update Public Index</text><text class="s" x="820" y="280">proofs_index.json / revocations.json</text>
+
+      <rect class="box" x="40" y="360" width="320" height="86"/><text class="t" x="60" y="400">Verify (anyone)</text><text class="s" x="60" y="430">Read ENS Text → check EAS UID</text>
+      <rect class="box" x="420" y="360" width="320" height="86"/><text class="t" x="440" y="400">Gate / Rate‑limit</text><text class="s" x="440" y="430">Script checks scope/rate/expiry</text>
+      <rect class="box" x="800" y="360" width="320" height="86"/><text class="t" x="820" y="400">Revoke / Renew</text><text class="s" x="820" y="430">EAS revoke + ENS text update</text>
+
+      <text class="s" x="40" y="520">Examples: org-neo.primeid.eth · ag-0001.mindid.eth · s-corecontrib.soulid.eth</text>
+    </g>
+  </g>
+</svg>

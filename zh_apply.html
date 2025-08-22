@@ -1,39 +1,44 @@
 <!doctype html><html lang="zh"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Apply — CIVAI.eth</title><link rel="stylesheet" href="style.css"></head><body>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>申请 · CIVAI</title><link rel="stylesheet" href="style.css"/></head><body>
 
-<div class="nav">
-  <div class="brand"><img src="assets/logo.svg" alt="logo"/><strong>CIVAI.eth</strong></div>
-  <a href="zh_index.html">Home</a>
-  <a href="zh_about.html">About</a>
-  <a href="zh_canon.html">Canon</a>
-  <a href="zh_pricing.html">Pricing</a>
-  <a href="zh_verify.html">Verify</a>
-  <a href="zh_cases.html">Cases</a>
-  <div class="cta"><a class="btn fill" href="zh_apply.html">Apply</a></div>
-</div>
-<div class="langs"><a href="en_index.html">EN</a> · <a href="zh_index.html">中文</a> · <a href="ja_index.html">日本語</a></div>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="zh_index.html"><img class="logo" src="logo.svg" alt="logo"/><span>CIVAI.eth</span></a>
+    <a href="zh_index.html">Home</a>
+    <a href="zh_about.html">About</a>
+    <a href="zh_canon.html">Canon</a>
+    <a href="zh_pricing.html">Pricing</a>
+    <a href="zh_verify.html">Verify</a>
+    <a href="zh_cases.html">Cases</a>
+    <div class="cta"><a class="btn filled" href="zh_apply.html">Apply</a></div>
+  </div>
+  <div class="wrap langs">
+    <a href="en_index.html">EN</a> · <a href="zh_index.html">中文</a> · <a href="ja_index.html">日本語</a>
+  </div>
+</header>
 
-<section class="grid two">
-  <div class="card">
-    <h2>申请</h2>
-    <p>把下面 JSON 发至 <a href="mailto:NFTsBANK@gmail.com?subject=CIVAI%20Apply">NFTsBANK@gmail.com</a>，我们会回发 EAS 签名链接。</p>
-<pre>{
-  "subject_wallet": "0x9a49b3C1b77Bc62105E0b8Cd7b048737d42BBBce",
-  "controller_wallet": "0x9a49b3C1b77Bc62105E0b8Cd7b048737d42BBBce",
-  "scope": ["read","post"],
-  "rate": "30/min",
-  "valid_until": "2026-12-31"
-}</pre>
-    <p class="small">Schema 固化在 AXIOMID；签发会写入 ENS Text + EAS UID + IPFS JSON。</p>
+<main class="wrap">
+  <h1>申请</h1>
+  <p>提交后 24–72h 完成人工核验与签发（占位说明，可改）。</p>
+  <div class="grid two">
+    <div class="card">
+      <form class="grid">
+        <label>名称 / Name<br/><input style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px"/></label>
+        <label>用途 / Scope<br/><input style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px"/></label>
+        <label>速率 / Rate (per min)<br/><input style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px"/></label>
+        <button class="btn filled" type="button">提交</button>
+      </form>
+    </div>
+    <div class="card">
+      <div class="small">样式预览（SVG）：</div>
+      <img alt="license card" src="assets/license_card.svg" style="width:100%;border-radius:12px;border:1px solid #eee"/>
+    </div>
   </div>
-  <div class="card">
-    <h2>命名规则</h2>
-    <ul>
-      <li>个人/组织：<code>u-xxxx.primeid.eth</code> / <code>org-xxxx.primeid.eth</code></li>
-      <li>代理：<code>ag-0001.mindid.eth</code></li>
-      <li>声誉：<code>s-corecontrib.soulid.eth</code></li>
-    </ul>
-  </div>
-</section>
-<div class="footer">© CIVAI.eth · Canon v1.0 (freeze 10y) · No token · No custody · No PII · No second keys · Append-only</div></body></html>
+</main>
+
+<footer class="wrap">
+  <div class="small">© CIVAI.eth · Canon v1.0 (freeze 10y) · No token · No custody · No PII · No second keys · Append‑only</div>
+</footer>
+
+</body></html>

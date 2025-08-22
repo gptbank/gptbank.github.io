@@ -1,27 +1,33 @@
 <!doctype html><html lang="zh"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Verify — CIVAI.eth</title><link rel="stylesheet" href="style.css"></head><body>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>验证 · CIVAI</title><link rel="stylesheet" href="style.css"/></head><body>
 
-<div class="nav">
-  <div class="brand"><img src="assets/logo.svg" alt="logo"/><strong>CIVAI.eth</strong></div>
-  <a href="zh_index.html">Home</a>
-  <a href="zh_about.html">About</a>
-  <a href="zh_canon.html">Canon</a>
-  <a href="zh_pricing.html">Pricing</a>
-  <a href="zh_verify.html">Verify</a>
-  <a href="zh_cases.html">Cases</a>
-  <div class="cta"><a class="btn fill" href="zh_apply.html">Apply</a></div>
-</div>
-<div class="langs"><a href="en_index.html">EN</a> · <a href="zh_index.html">中文</a> · <a href="ja_index.html">日本語</a></div>
-
-<section class="grid">
-  <div class="card"><h2>验证（任何人可执行）</h2>
-    <ol>
-      <li>打开 ENS 子域（如 <code>u-xxxx.primeid.eth</code>）。</li>
-      <li>读取 ENS Text：owner/controller/scope/rate/valid_until + <em>proof(ipfs://CID)</em> + <em>eas:uid</em>。</li>
-      <li>解析链上 EAS UID（Base/OP），用 CID 取回 IPFS JSON。</li>
-      <li>字段一致即有效；<code>revoke=1</code> 或过期则无效。</li>
-    </ol>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="zh_index.html"><img class="logo" src="logo.svg" alt="logo"/><span>CIVAI.eth</span></a>
+    <a href="zh_index.html">Home</a>
+    <a href="zh_about.html">About</a>
+    <a href="zh_canon.html">Canon</a>
+    <a href="zh_pricing.html">Pricing</a>
+    <a href="zh_verify.html">Verify</a>
+    <a href="zh_cases.html">Cases</a>
+    <div class="cta"><a class="btn filled" href="zh_apply.html">Apply</a></div>
   </div>
-</section>
-<div class="footer">© CIVAI.eth · Canon v1.0 (freeze 10y) · No token · No custody · No PII · No second keys · Append-only</div></body></html>
+  <div class="wrap langs">
+    <a href="en_index.html">EN</a> · <a href="zh_index.html">中文</a> · <a href="ja_index.html">日本語</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>验证</h1>
+  <p>任何人都可通过 ENS 文本 + EAS UIDs 验证。</p>
+  <div class="card"><span class="badge">示例</span>
+    <div class="small">ENS: <span class="code">u-2a7q.prim eid.eth</span> → EAS UID: <span class="code">0xabc...123</span></div>
+  </div>
+</main>
+
+<footer class="wrap">
+  <div class="small">© CIVAI.eth · Canon v1.0 (freeze 10y) · No token · No custody · No PII · No second keys · Append‑only</div>
+</footer>
+
+</body></html>

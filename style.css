@@ -1,35 +1,46 @@
 
-:root{
-  --orange:#F7931A;
-  --dark:#121212;
-  --muted:#555;
-  --bg:#fff;
-  --link:#0d77b5;
+/* CIVAI.eth — mobile-first, bitcoin.org-like palette */
+:root {
+  --orange: #F7931A;
+  --dark: #111111;
+  --mid: #555555;
+  --light: #ffffff;
+  --maxw: 820px;
+  --radius: 14px;
 }
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--dark);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif;line-height:1.6}
-a{color:var(--link);text-decoration:none}
-a:hover{text-decoration:underline}
-.nav{display:flex;align-items:center;gap:22px;padding:14px 18px;max-width:1080px;margin:0 auto}
-.nav .brand{display:flex;align-items:center;gap:10px;font-weight:800}
-.nav img{width:28px;height:28px}
-.nav .cta{margin-left:auto}
-.btn{display:inline-block;padding:12px 22px;border-radius:12px;border:2px solid var(--orange);color:var(--orange);font-weight:700}
-.btn.fill{background:var(--orange);color:#fff;border-color:var(--orange)}
-.hero{max-width:1080px;margin:0 auto;padding:8px 18px 28px}
-h1{font-size:40px;margin:8px 0 8px}
-.lead{font-size:20px;color:var(--muted);max-width:860px}
-.actions{display:flex;gap:16px;margin:22px 0}
-.banner{max-width:1080px;margin:10px auto 40px;border-radius:14px;overflow:hidden}
-.grid{max-width:1080px;margin:0 auto;padding:12px 18px;display:grid;gap:20px}
-.grid.two{grid-template-columns:1fr}
-@media (min-width:900px){.grid.two{grid-template-columns:1fr 1fr} h1{font-size:48px}}
-.card{border:1px solid #e8e8e8;border-radius:14px;padding:18px;background:#fff}
-.footer{max-width:1080px;margin:28px auto;padding:16px 18px;color:var(--muted);font-size:14px}
-.langs{max-width:1080px;margin:0 auto;padding:0 18px 8px;color:var(--muted)}
-.kicker{color:var(--muted);font-weight:700;letter-spacing:.2px;text-transform:uppercase}
-.table{width:100%;border-collapse:collapse}
-.table th,.table td{border:1px solid #eee;padding:10px;text-align:left}
-.center{text-align:center}
-.small{font-size:14px;color:var(--muted)}
-pre{white-space:pre-wrap;background:#fafafa;border:1px solid #eee;border-radius:12px;padding:12px}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin:0; padding:0; background:#fff; color:var(--dark); font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,'PingFang SC','Hiragino Sans GB','Noto Sans CJK SC','Source Han Sans SC','Microsoft YaHei',sans-serif; }
+a { color:#1a73e8; text-decoration:none; }
+a:hover { text-decoration:underline; }
+.wrap { max-width:var(--maxw); margin:0 auto; padding:0 16px; }
+.header { position:sticky; top:0; backdrop-filter:saturate(180%) blur(10px); background:rgba(255,255,255,.86); border-bottom:1px solid #eee; z-index:10; }
+.nav { display:flex; align-items:center; gap:18px; height:64px; }
+.nav .brand { display:flex; align-items:center; gap:10px; font-weight:700; }
+.nav img.logo { width:28px; height:28px; }
+.nav a { color:var(--dark); font-weight:600; }
+.nav .cta { margin-left:auto; }
+.btn { display:inline-block; padding:12px 18px; border-radius:12px; font-weight:700; border:2px solid var(--orange); }
+.btn.filled { background:var(--orange); color:#fff; border-color:var(--orange); }
+.btn.ghost { color:var(--orange); background:#fff; }
+.langs { font-size:14px; margin-top:8px; }
+.hero { padding:28px 0 12px; }
+h1 { font-size:34px; line-height:1.25; margin:18px 0; }
+.lead { font-size:20px; color:var(--mid); }
+.section { padding:22px 0; border-top:1px solid #f2f2f2; }
+.card { border:1px solid #eee; border-radius:var(--radius); padding:16px; }
+.grid { display:grid; grid-template-columns:1fr; gap:14px; }
+@media (min-width:760px) {
+  h1 { font-size:40px; }
+  .grid.two { grid-template-columns:1fr 1fr; }
+}
+footer { color:#666; font-size:14px; padding:24px 0 60px; }
+.badge { display:inline-block; background:var(--orange); color:#fff; padding:3px 8px; border-radius:999px; font-size:12px; vertical-align:middle; }
+.kv { background:var(--orange); color:#fff; border-radius:16px; padding:36px; text-align:center; margin:16px 0; }
+.small { font-size:13px; color:#666; }
+.notice { background:#fff7ec; border:1px solid #ffe3c1; padding:10px 12px; border-radius:10px; }
+.table { width:100%; border-collapse:separate; border-spacing:0; }
+.table th, .table td { text-align:left; padding:10px; border-bottom:1px solid #eee; }
+.table th { color:#333; background:#fafafa; position:sticky; top:64px; }
+.code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background:#f7f7f7; border-radius:8px; padding:2px 6px; }
+/* link buttons row */
+.actions { display:flex; gap:12px; flex-wrap:wrap; }
