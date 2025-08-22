@@ -1,9 +1,18 @@
 {
-  "subject": "0x9a49b3C1b77Bc62105E0b8Cd7b048737d42BBBce",
-  "scope": [
-    "read",
-    "post"
+  "schema": "CFS-1",
+  "fields": [
+    "subject",
+    "scope",
+    "rate",
+    "valid_until"
   ],
-  "rate": "60/min",
-  "valid_until": "2026-12-31"
+  "example": {
+    "subject": "u-2a7q.primeid.eth",
+    "scope": [
+      "commit",
+      "publish"
+    ],
+    "rate": "60/day",
+    "valid_until": "2026-12-31"
+  }
 }
